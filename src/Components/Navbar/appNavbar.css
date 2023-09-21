@@ -1,0 +1,347 @@
+.NavBar_Main_Container {
+  display: flex;
+  padding-left: 7%;
+  padding-right: 7%;
+  align-items: center;
+  padding-top: 2.4rem;
+  padding-bottom: 1.4rem;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 995;
+  width: 100%;
+}
+.Active_Header {
+  transition: 400ms ease-in-out;
+  background-color: rgba(255, 255, 255);
+  /* box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.InquiryTextWrapper {
+  margin-left: 10px;
+}
+.Navbar_Instant_Text_Style {
+  color: white;
+  font-size: 0.8rem;
+  font-family: var(--SubHeading-font-family);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.Navbar_Enquiry_Text_Style {
+  color: white;
+  font-size: 1.5rem;
+  font-family: var(--SubHeading-font-family);
+}
+.Navbar_Valuation_Text_Style {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-family: var(--SubHeading-font-family);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Logo_Text_style {
+  font-size: 1.5rem;
+  color: black;
+  font-family: var(--SubHeading-font-family);
+}
+.Logo_Saloon_Text_Style {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--SubHeading-font-family);
+}
+
+.Join_Button_Style {
+  padding: 12px;
+  padding-left: 48px;
+  padding-right: 48px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #353535;
+  color: white;
+  margin-right: 10px;
+  font-family: var(--SubHeading-font-family);
+  cursor: pointer;
+}
+.Join_Button_Style_Small_Device {
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #353535;
+  color: white;
+  margin-right: 0px;
+  margin-top: 5px;
+  font-family: var(--SubHeading-font-family);
+  cursor: pointer;
+}
+.Navlink_Main_Conatiner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+.Navlink_Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -100px;
+}
+.Button_Main_Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Button_Drop_Container {
+  display: flex;
+  align-items: center;
+  background-color: #6fa66b;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+}
+.Button_Drop_Container_Small_Device {
+  display: flex;
+  align-items: center;
+  background-color: #6fa66b;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.Select_Option_Style_Navbar {
+  font-size: 1.3rem !important;
+  color: black;
+  font-family: var(--SubHeading-font-family);
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.Select_Option_Style_Navbar .css-1jqq78o-placeholder {
+  color: black;
+}
+
+.Select_Option_Style_Navbar .css-tj5bde-Svg {
+  fill: #636363;
+}
+.Select_Option_Style_Navbar .css-1dimb5e-singleValue {
+  color: black;
+}
+
+.NavabrInquiryButton {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  height: 45px;
+  padding: 0 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ValuationButtonWrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border: 1px solid black;
+  height: 45px;
+  padding: 0 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.MainButtonWrapperContainer {
+  display: flex;
+  align-items: center;
+}
+
+.Select_Option_Button {
+  padding: 1px;
+  font-size: 1.5rem;
+  /* width: 10rem; */
+  font-family: var(--SubHeading-font-family);
+}
+.Select_Option_Button_Small_Device {
+  font-size: 1.5rem;
+  /* padding-right: 5px; */
+  font-family: var(--SubHeading-font-family);
+}
+.Select_Option_Style_Small_Device {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+.Link_Style {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  font-family: var(--SubHeading-font-family);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.Link_Style:hover {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  font-family: var(--SubHeading-font-family);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.Link_Style_Scroll {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  font-family: var(--SubHeading-font-family);
+  font-weight: 600;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.Link_Style_Scroll:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: var(--SubHeading-font-family);
+  font-weight: 600;
+}
+
+.Link_is_Active {
+  background-color: yellow;
+  color: black;
+}
+.Link_Style_Small_Device {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  padding-top: 15px;
+  font-family: var(--SubHeading-font-family);
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 25px;
+  min-width: 65%;
+  text-align: center;
+}
+.Navbar_Image_Style {
+  height: 22px;
+  width: 22px;
+  border-radius: 100px;
+}
+.Select_Container {
+  display: flex;
+  align-items: center;
+}
+.NavLink_App_Smaller_Devices {
+  display: none;
+}
+.NavLink_App_Smaller_Overlay {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  opacity: 0.9;
+  transition: 0s ease;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 5;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+.Navlink_App_Links_Wrapper_SmallScreen_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+.Nav_Image_Style {
+  height: 100%;
+  width: 140px;
+}
+
+@media screen and (max-width: 786px) {
+  .Navlink_Main_Conatiner {
+    display: none;
+  }
+  .NavLink_App_Smaller_Devices {
+    display: flex;
+  }
+  .NavBar_Main_Container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    align-items: center;
+    padding-top: 2.4rem;
+    padding-bottom: 1.4rem;
+    position: fixed;
+    z-index: 995;
+    width: 100%;
+  }
+  .Navlink_Wrapper {
+    display: none;
+  }
+  .MainButtonWrapperContainer {
+    display: none;
+  }
+  .NavabrInquiryButtonSmallDevice {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    width: 150px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    justify-content: center;
+  }
+  .ValuationButtonWrapperSmallDevice {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .NavButtonSmallDeviceWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 787px) and (max-width: 950px) {
+  .Navlink_Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 951px) and (max-width: 1050px) {
+  .Navlink_Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1051px) and (max-width: 1750px) {
+  .Navlink_Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

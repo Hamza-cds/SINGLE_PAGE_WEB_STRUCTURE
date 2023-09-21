@@ -1,0 +1,114 @@
+.HomeMainHeaderContainer {
+  padding-top: 6%;
+  margin-bottom: 100px;
+}
+.mainHeaderBgContainer {
+  min-height: 80vh;
+  width: 85.5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url("../../Assets/HeaderBg.png"); */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Select_Option_Style {
+  font-size: 2rem !important;
+  color: #626262;
+  font-family: var(--SubHeading-font-family);
+  cursor: pointer;
+  max-width: 160px;
+  font-weight: bold;
+  margin-left: -8px;
+}
+
+.Select_Option_Style .css-1jqq78o-placeholder {
+  color: #626262;
+}
+
+.Select_Option_Style .css-tj5bde-Svg {
+  fill: #626262;
+}
+.Select_Option_Style .css-1dimb5e-singleValue {
+  color: #626262;
+}
+.DropDownMainContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  bottom: -30px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 12;
+}
+.DropDownButtonMainWrapper {
+  position: absolute;
+  top: -52.5px;
+  width: 50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 11;
+}
+
+.DropDownBuyButton {
+  background-color: #113f3e;
+  width: 33.33%;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+.DropDownRentButton {
+  background-color: #113f3e;
+  width: 33.33%;
+  padding: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+.DropDownProjectButton {
+  background-color: #113f3e;
+  width: 33.33%;
+  padding: 15px;
+  border-top-right-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+.HeaderSearchButtonContainer {
+  background-color: #e3b64b;
+  display: flex;
+  align-items: center;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+.HeaderTypeTextStyle {
+  font-size: 1.3rem;
+  color: #626262;
+  font-family: var(--SubHeading-font-family);
+}
+
+.SearchIconButtonStyle {
+  font-size: 1.3rem;
+  color: white;
+  font-family: var(--SubHeading-font-family);
+  margin-left: 10px;
+}
