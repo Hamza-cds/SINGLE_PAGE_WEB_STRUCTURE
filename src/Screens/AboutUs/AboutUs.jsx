@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import "./home.css";
+import "./aboutUs.css";
 
-const Home = () => {
+const AboutUs = () => {
   return (
     <>
       <section className="HomeMainHeaderContainer">
-        <div>home</div>
+        <div>About</div>
       </section>
     </>
   );
 };
 
-export default Home;
+export default AboutUs;

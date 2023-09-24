@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./appNavbar.css";
 import { NavLink, useHistory, Navigate, useNavigate } from "react-router-dom";
 import { FiAlignRight, FiX } from "react-icons/fi";
+import { BiLogIn } from "react-icons/bi";
+
 import Fade from "react-reveal/Fade";
 // import { BurgerIcon, MonarchLogo, PhoneIcon, value } from "../../Assets";
 import Select from "react-select";
+import { PartnerLogo } from "../../Assets";
 
-function Navbar(props) {
+function Navbar({ setIsLogin }) {
   const navigate = useNavigate();
   const [isScrolling, setIsScrolling] = useState(false);
   const [isActive, setIsActive] = useState(0);
@@ -28,11 +31,6 @@ function Navbar(props) {
     elem.scrollIntoView({ behavior: "smooth" });
   }
 
-  const options = [
-    { id: 1, value: "Our Projects", label: "Our Projects" },
-    { id: 2, value: "Property Detail", label: "PropertyDetail" },
-  ];
-
   return (
     <Fade top>
       <nav
@@ -42,146 +40,48 @@ function Navbar(props) {
             : "NavBar_Main_Container"
         }
       >
-        {/* <img src={MonarchLogo} alt="Image" className="Nav_Image_Style" /> */}
+        <div className="Navbar_Main_Logo_Container">
+          <img src={PartnerLogo} alt="Image" className="Nav_Image_Style" />
+          <div className={"Navlink_Wrapper"}>
+            <NavLink
+              className={"Link_Style"}
+              to="/"
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "white" : "black",
+                  fontWeight: isActive ? "bold" : "600",
+                  backgroundColor: isActive ? "#1dafa1" : null,
+                };
+              }}
+            >
+              Home
+            </NavLink>
 
-        <div className={"Navlink_Wrapper"}>
-          <NavLink
-            className={"Link_Style"}
-            to="/"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "#124342" : "black",
-                fontWeight: isActive ? "bold" : "400",
-              };
-            }}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            className={"Link_Style"}
-            to="/"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "#124342" : "black",
-                fontWeight: isActive ? "bold" : "400",
-              };
-            }}
-          >
-            Rent
-          </NavLink>
-          <NavLink
-            className={"Link_Style"}
-            to="/"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "#124342" : "black",
-                fontWeight: isActive ? "bold" : "400",
-              };
-            }}
-          >
-            Buy
-          </NavLink>
-          <Select
-            placeholder={"Commerical"}
-            options={options}
-            className="Select_Option_Style_Navbar"
-            classNamePrefix="Select"
-            // onChange={(value) => {
-            //   if (value.id == 1) {
-            //     navigate("/OurProjects");
-            //   } else if (value.id == 2) {
-            //     navigate("/ProperDetail");
-            //   }
-            // }}
-            components={{
-              IndicatorSeparator: () => null,
-            }}
-            isSearchable={false}
-            styles={{
-              control: (baseStyles, state) => ({
-                ...baseStyles,
-                borderColor: state.isFocused ? "white" : null,
-                borderRadius: "5px",
-                border: state.isFocused ? 0 : 0,
-                outline: state.isFocused ? "none" : "none",
-                boxShadow: "none",
-                cursor: "pointer",
-              }),
-            }}
-          />
-          <NavLink
-            className={"Link_Style"}
-            to="/"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "#124342" : "black",
-                fontWeight: isActive ? "bold" : "400",
-              };
-            }}
-          >
-            Investment
-          </NavLink>
-          <NavLink
-            className={"Link_Style"}
-            to="/"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "#124342" : "black",
-                fontWeight: isActive ? "bold" : "400",
-              };
-            }}
-          >
-            Services
-          </NavLink>
-          <NavLink
-            className={"Link_Style"}
-            to="/"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "#124342" : "black",
-                fontWeight: isActive ? "bold" : "400",
-              };
-            }}
-          >
-            About
-          </NavLink>
-          <NavLink
-            className={"Link_Style"}
-            to="/"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "#124342" : "black",
-                fontWeight: isActive ? "bold" : "400",
-              };
-            }}
-          >
-            Blogs
-          </NavLink>
-          <NavLink
-            className={"Link_Style"}
-            to="/"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "#124342" : "black",
-                fontWeight: isActive ? "bold" : "400",
-              };
-            }}
-          >
-            Contact
-          </NavLink>
+            <NavLink
+              className={"Link_Style"}
+              to="/AboutUs"
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "white" : "black",
+                  fontWeight: isActive ? "bold" : "600",
+                  backgroundColor: isActive ? "#1dafa1" : null,
+                };
+              }}
+            >
+              About
+            </NavLink>
+          </div>
         </div>
 
         <div className="MainButtonWrapperContainer">
-          <div className="NavabrInquiryButton">
-            {/* <img src={PhoneIcon} alt="Image" /> */}
-            <div className="InquiryTextWrapper">
-              <p className="Navbar_Instant_Text_Style">INSTANT</p>
-              <p className="Navbar_Enquiry_Text_Style">Enquiry</p>
-            </div>
-          </div>
-          <div className="ValuationButtonWrapper">
-            {/* <img src={BurgerIcon} alt="Image" /> */}
-            <p className="Navbar_Valuation_Text_Style">Valuation</p>
+          <div
+            className="NavabrInquiryButton"
+            onClick={() => {
+              setIsLogin(true);
+            }}
+          >
+            <BiLogIn color="white" size={30} />
+            <p className="Navbar_Instant_Text_Style">Login</p>
           </div>
         </div>
 

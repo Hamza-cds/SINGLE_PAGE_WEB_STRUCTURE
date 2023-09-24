@@ -1,48 +1,41 @@
 import React from "react";
 import "./footer.css";
+import { TfiEmail } from "react-icons/tfi";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { ImLocation2 } from "react-icons/im";
+import { PartnerLogo } from "../../Assets";
 
 export default function Footer() {
   return (
     <div className="MainFooterContainer">
       <div className="FooterChildContainerRow">
         <div className="ChildSubContainerVer1">
-          {/* <img src={Logo} alt="Image" className="FootLogoStyle" /> */}
+          <img src={PartnerLogo} alt="Image" className="FootLogoStyle" />
           <div className="RowBlock1">
-            {/* <img src={PinLoc} alt="Image" className="RowBlockIcon" /> */}
+            <ImLocation2 color={"#1dafa1"} size={16} />
             <p className="RowBlockText">
               Realtor Office Building 5F <br /> 123 Anywhere St., Any City,
               12345 Any State
             </p>
           </div>
           <div className="RowBlock2">
-            {/* <img src={phone} alt="Image" className="RowBlockIcon" /> */}
+            <BsFillTelephoneFill color={"#1dafa1"} size={16} />
             <p className="RowBlockText">123-456-7890</p>
           </div>
           <div className="RowBlock2">
-            {/* <img src={Mail} alt="Image" className="RowBlockIcon" /> */}
+            <TfiEmail color={"#1dafa1"} size={16} />
             <p className="RowBlockText">support@dreamwell.com</p>
           </div>
         </div>
 
         <div className="ChildSubContainerVer2">
           <p className="FooterHeading">Quick Links</p>
+          <div className="QuickLinksStyle">FAQ's</div>
           <div className="QuickLinksStyle">About Us</div>
-          <div className="QuickLinksStyle">Terms & Conditions</div>
-          <div className="QuickLinksStyle">Guide</div>
-          <div className="QuickLinksStyle">Support Center</div>
-          <div className="QuickLinksStyle">Blog</div>
-          <div className="QuickLinksStyle">Contact</div>
           <div className="QuickLinksStyle">Privacy Policy</div>
-        </div>
-
-        <div className="ChildSubContainerVer3">
-          <p className="FooterHeading">Discover</p>
-          <div className="QuickLinksStyle">Rawalpindi</div>
-          <div className="QuickLinksStyle">Islamabad</div>
-          <div className="QuickLinksStyle">Pakistan</div>
-          <div className="QuickLinksStyle">Bahria Town</div>
-          <div className="QuickLinksStyle">DHA isbamabad</div>
-          <div className="QuickLinksStyle">PC</div>
+          <div className="QuickLinksStyle">Terms & Conditions</div>
+          <div className="QuickLinksStyle">Warranty & Returns</div>
+          <div className="QuickLinksStyle">Payment Information</div>
         </div>
 
         <div className="ChildSubContainerVer4">
@@ -50,16 +43,8 @@ export default function Footer() {
             Get the Latest Information about properties from{" "}
             <span className="MonarchText"> MONARCH INTERNATIONAL</span>
           </div>
-          <div className="LastBlockInputBox">
-            <input
-              className="LastBlockInput"
-              type="text"
-              placeholder="Enter your email here"
-            />
-            <div className="ButtonStyle">Subscribe</div>
-          </div>
           <div className="FootText1">Need any Help!</div>
-          <div className="FootText2">Chat with our live agent</div>
+          <div className="FootText2">Call us</div>
           <div className="PhoneNumberStyle">+92-311-000-22-33</div>
         </div>
       </div>
@@ -67,18 +52,13 @@ export default function Footer() {
       <div className="FooterBaseMainContainerRow">
         <div className="BaseChildContainerRow1">
           <div className="FollowUs">Follow Us</div>
+        </div>
+        <div className="BaseChildContainerRow2">
           {/* <img src={facebook} alt="Image" className="SocialIcons" />
           <img src={youtube} alt="Image" className="SocialIcons" />
           <img src={linkedin} alt="Image" className="SocialIcons" />
           <img src={twitter} alt="Image" className="SocialIcons" />
           <img src={insta} alt="Image" className="SocialIcons" /> */}
-        </div>
-        <div className="BaseChildContainerRow2">
-          <div className="BaseText">Privacy Policy</div>
-          <div className="BaseText">|</div>
-          <div className="BaseText">Terms & Conditions</div>
-          <div className="BaseText">|</div>
-          <div className="BaseText">Cookie Policy</div>
         </div>
       </div>
     </div>

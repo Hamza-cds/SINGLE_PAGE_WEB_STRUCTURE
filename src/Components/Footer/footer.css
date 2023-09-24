@@ -1,5 +1,5 @@
 .MainFooterContainer {
-  background: var(--dark-blue, rgba(1, 35, 34, 0.97));
+  background-color: var(--color-primary);
 }
 .FooterChildContainerRow {
   display: flex;
@@ -7,7 +7,7 @@
   width: auto;
   margin: 0 5%;
   justify-content: space-between;
-  padding: 5% 0;
+  padding: 2% 0;
 }
 .ChildSubContainerVer1 {
   padding: 1.5rem;
@@ -58,7 +58,7 @@
 }
 
 .FooterHeading {
-  color: #e4b850;
+  color: var(--color-secondary);
   font-family: var(--SubHeading-font-family);
   font-size: 1.5rem;
   font-style: normal;
@@ -72,10 +72,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  cursor: pointer;
 }
 .LastBlockHead {
   color: var(--white, #fff);
-  font-family: Inter;
+  font-family: var(--SubHeading-font-family);
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -83,7 +84,7 @@
   max-width: 35vw;
 }
 .MonarchText {
-  color: #e4b850;
+  color: var(--color-secondary);
   font-family: var(--SubHeading-font-family);
   font-size: 1.8rem;
   font-style: normal;
@@ -126,7 +127,7 @@
   justify-content: center; /* Horizontally center content */
   align-items: center;
   border-radius: 7px;
-  background-color: #e4b850;
+  background-color: var(--color-secondary);
   box-shadow: 0px 4px 20px rgba(25, 207, 121, 0.2);
   width: 30%;
   color: white;
@@ -135,11 +136,11 @@
 }
 .FootText1 {
   color: var(--white, #fff);
-  font-family: Inter;
+  font-family: var(--SubHeading-font-family);
   font-size: 25px;
   font-style: normal;
   font-weight: 800;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .FootText2 {
   color: var(--white, #fff);
@@ -150,13 +151,12 @@
   line-height: 31px;
 }
 .PhoneNumberStyle {
-  color: #e4b850;
+  color: var(--color-secondary);
   font-family: var(--SubHeading-font-family);
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 800;
   line-height: 31px;
-  margin-top: 20px;
 }
 .UnderLineStyle {
   height: 0.5px;
@@ -171,7 +171,7 @@
   justify-content: space-between;
   padding-left: 5.5%;
   padding-right: 5.5%;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .BaseChildContainerRow1 {
   display: flex;
@@ -184,7 +184,7 @@
 .FollowUs {
   color: var(--white, #fff);
   text-align: center;
-  font-family: Inter;
+  font-family: var(--SubHeading-font-family);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -199,7 +199,7 @@
 .BaseText {
   color: var(--white, #fff);
   text-align: center;
-  font-family: Inter;
+  font-family: var(--SubHeading-font-family);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
