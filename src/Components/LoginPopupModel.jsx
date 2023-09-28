@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import { BiLogIn } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const LoginPopupModel = ({ setIsLogin, isLogin }) => {
+  const navigate = useNavigate();
+
   const disableScrollOnOpen = () => {
     document.body.style.overflow = "hidden";
   };
@@ -56,7 +59,8 @@ const LoginPopupModel = ({ setIsLogin, isLogin }) => {
           <div
             className="LoginButton"
             onClick={() => {
-              setIsLogin(true);
+              navigate("/Dashboard");
+              setIsLogin(false);
             }}
           >
             <BiLogIn color="white" size={30} />

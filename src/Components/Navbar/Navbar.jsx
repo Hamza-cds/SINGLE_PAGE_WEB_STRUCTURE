@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./appNavbar.css";
-import { NavLink, useHistory, Navigate, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FiAlignRight, FiX } from "react-icons/fi";
 import { BiLogIn } from "react-icons/bi";
-
 import Fade from "react-reveal/Fade";
-// import { BurgerIcon, MonarchLogo, PhoneIcon, value } from "../../Assets";
-import Select from "react-select";
 import { PartnerLogo } from "../../Assets";
 
 function Navbar({ setIsLogin }) {
@@ -119,69 +116,10 @@ function Navbar({ setIsLogin }) {
                 >
                   Home
                 </NavLink>
+
                 <NavLink
                   className={"Link_Style_Small_Device"}
-                  to="/"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#124342" : "black",
-                      fontWeight: isActive ? "bold" : "400",
-                    };
-                  }}
-                >
-                  Rent
-                </NavLink>
-                <NavLink
-                  className={"Link_Style_Small_Device"}
-                  to="/"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#124342" : "black",
-                      fontWeight: isActive ? "bold" : "400",
-                    };
-                  }}
-                >
-                  Buy
-                </NavLink>
-                <NavLink
-                  className={"Link_Style_Small_Device"}
-                  to="/"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#124342" : "black",
-                      fontWeight: isActive ? "bold" : "400",
-                    };
-                  }}
-                >
-                  Commercial
-                </NavLink>
-                <NavLink
-                  className={"Link_Style_Small_Device"}
-                  to="/"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#124342" : "black",
-                      fontWeight: isActive ? "bold" : "400",
-                    };
-                  }}
-                >
-                  Investment
-                </NavLink>
-                <NavLink
-                  className={"Link_Style_Small_Device"}
-                  to="/"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#124342" : "black",
-                      fontWeight: isActive ? "bold" : "400",
-                    };
-                  }}
-                >
-                  Services
-                </NavLink>
-                <NavLink
-                  className={"Link_Style_Small_Device"}
-                  to="/"
+                  to="/AboutUs"
                   style={({ isActive }) => {
                     return {
                       color: isActive ? "#124342" : "black",
@@ -191,41 +129,10 @@ function Navbar({ setIsLogin }) {
                 >
                   About
                 </NavLink>
-                <NavLink
-                  className={"Link_Style_Small_Device"}
-                  to="/"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#124342" : "black",
-                      fontWeight: isActive ? "bold" : "400",
-                    };
-                  }}
-                >
-                  Blogs
-                </NavLink>
-                <NavLink
-                  className={"Link_Style_Small_Device"}
-                  to="/"
-                  style={({ isActive }) => {
-                    return {
-                      color: isActive ? "#124342" : "black",
-                      fontWeight: isActive ? "bold" : "400",
-                    };
-                  }}
-                >
-                  Contact
-                </NavLink>
                 <div className="NavButtonSmallDeviceWrapper">
-                  <div className="NavabrInquiryButtonSmallDevice">
-                    {/* <img src={PhoneIcon} alt="Image" /> */}
-                    <div className="InquiryTextWrapper">
-                      <p className="Navbar_Instant_Text_Style">INSTANT</p>
-                      <p className="Navbar_Enquiry_Text_Style">Enquiry</p>
-                    </div>
-                  </div>
                   <div className="ValuationButtonWrapperSmallDevice">
-                    {/* <img src={BurgerIcon} alt="Image" /> */}
-                    <p className="Navbar_Valuation_Text_Style">Valuation</p>
+                    <BiLogIn color="white" size={30} />
+                    <p className="Navbar_Valuation_Text_Style">Login</p>
                   </div>
                 </div>
               </div>

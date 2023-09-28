@@ -1,0 +1,35 @@
+.categorySliderMainContainer {
+  /* background-color: red; */
+  width: 150px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: all 0.3s ease-in-out; /* Add a transition for a smooth hover effect */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  align-items: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.categorySliderMainContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.categoryLogoImageStyle {
+  height: 100px;
+  width: 120px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+.CategoryText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: var(--Heading-font-family);
+  margin-top: 10px;
+}

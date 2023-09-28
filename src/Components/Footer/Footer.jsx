@@ -4,8 +4,10 @@ import { TfiEmail } from "react-icons/tfi";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { ImLocation2 } from "react-icons/im";
 import { PartnerLogo } from "../../Assets";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <div className="MainFooterContainer">
       <div className="FooterChildContainerRow">
@@ -30,12 +32,61 @@ export default function Footer() {
 
         <div className="ChildSubContainerVer2">
           <p className="FooterHeading">Quick Links</p>
-          <div className="QuickLinksStyle">FAQ's</div>
-          <div className="QuickLinksStyle">About Us</div>
-          <div className="QuickLinksStyle">Privacy Policy</div>
-          <div className="QuickLinksStyle">Terms & Conditions</div>
-          <div className="QuickLinksStyle">Warranty & Returns</div>
-          <div className="QuickLinksStyle">Payment Information</div>
+          <NavLink
+            className="QuickLinksStyle"
+            to="/Faqs"
+            style={({ isActive }) => {
+              return {
+                borderBottom: isActive ? "1px solid #1dafa1" : null,
+              };
+            }}
+          >
+            FAQ's
+          </NavLink>
+          <NavLink
+            className="QuickLinksStyle"
+            to="/Privacy"
+            style={({ isActive }) => {
+              return {
+                borderBottom: isActive ? "1px solid #1dafa1" : null,
+              };
+            }}
+          >
+            Privacy Policy
+          </NavLink>
+          <NavLink
+            className="QuickLinksStyle"
+            to="/Terms"
+            style={({ isActive }) => {
+              return {
+                borderBottom: isActive ? "1px solid #1dafa1" : null,
+              };
+            }}
+          >
+            Terms & Conditions
+          </NavLink>
+          <NavLink
+            className="QuickLinksStyle"
+            to="/Warranty"
+            style={({ isActive }) => {
+              return {
+                borderBottom: isActive ? "1px solid #1dafa1" : null,
+              };
+            }}
+          >
+            Warranty & Returns
+          </NavLink>
+          <NavLink
+            className="QuickLinksStyle"
+            to="/PaymentInfo"
+            style={({ isActive }) => {
+              return {
+                borderBottom: isActive ? "1px solid #1dafa1" : null,
+              };
+            }}
+          >
+            Payment Information
+          </NavLink>
         </div>
 
         <div className="ChildSubContainerVer4">
