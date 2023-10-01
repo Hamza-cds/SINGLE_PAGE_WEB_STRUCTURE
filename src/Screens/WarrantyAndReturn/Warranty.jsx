@@ -4,7 +4,7 @@ import "./warranty.css";
 const Warranty = () => {
   return (
     <>
-      <section className="HomeMainHeaderContainer">
+      <section className="WarrantyMainHeaderContainer">
         <div>Warranty & Returns </div>
       </section>
     </>

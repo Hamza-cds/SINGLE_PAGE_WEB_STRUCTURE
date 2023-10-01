@@ -1,0 +1,41 @@
+.DashboardMainHeaderContainer {
+  display: flex;
+  width: 85.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7%;
+  margin-bottom: 50px;
+}
+.DashboardSideMainWrapper {
+  min-width: 15%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 35px;
+  border-radius: 3px;
+}
+.DashboardRightContentWrapper {
+  width: 85%;
+}
+.CategoryButtonStyle {
+  font-size: 1.5rem;
+  font-family: var(--Heading-font-family);
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px 40px;
+  color: black;
+  border-radius: 5px;
+}
+.ProductButtonStyle {
+  font-size: 1.5rem;
+  font-family: var(--Heading-font-family);
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 10px 40px;
+  color: black;
+  border-radius: 5px;
+}

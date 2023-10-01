@@ -3,7 +3,19 @@ import "./footer.css";
 import { TfiEmail } from "react-icons/tfi";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { ImLocation2 } from "react-icons/im";
-import { PartnerLogo } from "../../Assets";
+
+import {
+  BiLogoFacebookSquare,
+  BiLogoWhatsappSquare,
+  BiLogoInstagramAlt,
+} from "react-icons/bi";
+
+import {
+  FaceBookIcon,
+  InstagramIcon,
+  PartnerLogo,
+  WhatsUpIcon,
+} from "../../Assets";
 import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Footer() {
@@ -14,18 +26,27 @@ export default function Footer() {
         <div className="ChildSubContainerVer1">
           <img src={PartnerLogo} alt="Image" className="FootLogoStyle" />
           <div className="RowBlock1">
-            <ImLocation2 color={"#1dafa1"} size={16} />
+            <ImLocation2
+              color={"#1dafa1"}
+              size={16}
+              className="InfoIconStyle"
+            />
             <p className="RowBlockText">
-              Realtor Office Building 5F <br /> 123 Anywhere St., Any City,
-              12345 Any State
+              Realtor Office Building 5F
+              <br />
+              123 Anywhere St., Any City, 12345 Any State
             </p>
           </div>
           <div className="RowBlock2">
-            <BsFillTelephoneFill color={"#1dafa1"} size={16} />
+            <BsFillTelephoneFill
+              color={"#1dafa1"}
+              size={16}
+              className="InfoIconStyle"
+            />
             <p className="RowBlockText">123-456-7890</p>
           </div>
           <div className="RowBlock2">
-            <TfiEmail color={"#1dafa1"} size={16} />
+            <TfiEmail color={"#1dafa1"} size={16} className="InfoIconStyle" />
             <p className="RowBlockText">support@dreamwell.com</p>
           </div>
         </div>
@@ -105,11 +126,22 @@ export default function Footer() {
           <div className="FollowUs">Follow Us</div>
         </div>
         <div className="BaseChildContainerRow2">
-          {/* <img src={facebook} alt="Image" className="SocialIcons" />
-          <img src={youtube} alt="Image" className="SocialIcons" />
-          <img src={linkedin} alt="Image" className="SocialIcons" />
-          <img src={twitter} alt="Image" className="SocialIcons" />
-          <img src={insta} alt="Image" className="SocialIcons" /> */}
+          <BiLogoFacebookSquare
+            color={"#1dafa1"}
+            size={35}
+            className="IconStyle"
+          />
+
+          <BiLogoWhatsappSquare
+            color={"#1dafa1"}
+            size={35}
+            className="IconStyle"
+          />
+          <BiLogoInstagramAlt
+            color={"#1dafa1"}
+            size={35}
+            className="IconStyle"
+          />
         </div>
       </div>
     </div>

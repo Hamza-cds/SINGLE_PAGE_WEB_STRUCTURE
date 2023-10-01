@@ -13,6 +13,7 @@ import Privacy from "./Screens/PrivacyPolicy/Privacy";
 import Terms from "./Screens/TermsAndCondition/Terms";
 import Warranty from "./Screens/WarrantyAndReturn/Warranty";
 import PaymentInfo from "./Screens/PaymentInfo/PaymentInfo";
+import Productdetail from "./Screens/ProductDetail/ProductDetail";
 
 const App = (props) => {
   const [isLogin, setIsLogin] = useState(false);
@@ -31,6 +32,7 @@ const App = (props) => {
           <Route path="/Terms" element={<Terms />} />
           <Route path="/Warranty" element={<Warranty />} />
           <Route path="/PaymentInfo" element={<PaymentInfo />} />
+          <Route path="/Productdetail" element={<Productdetail />} />
         </Routes>
         <Footer />
       </BrowserRouter>

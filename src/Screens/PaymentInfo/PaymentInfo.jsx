@@ -4,7 +4,7 @@ import "./paymentInfo.css";
 const PaymentInfo = () => {
   return (
     <>
-      <section className="HomeMainHeaderContainer">
+      <section className="PaymentMainHeaderContainer">
         <div>Payment information </div>
       </section>
     </>

@@ -4,7 +4,7 @@ import "./privacy.css";
 const Privacy = () => {
   return (
     <>
-      <section className="HomeMainHeaderContainer">
+      <section className="PrivacyMainHeaderContainer">
         <div>Privacy</div>
       </section>
     </>

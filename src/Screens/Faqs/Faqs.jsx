@@ -4,7 +4,7 @@ import "./faqs.css";
 const Faqs = () => {
   return (
     <>
-      <section className="HomeMainHeaderContainer">
+      <section className="FAqMainHeaderContainer">
         <div>Faqs</div>
       </section>
     </>

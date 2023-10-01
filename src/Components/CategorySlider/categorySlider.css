@@ -18,6 +18,28 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
+.categorySliderMainContainerWrapper {
+  /* background-color: red; */
+  width: 150px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: all 0.3s ease-in-out; /* Add a transition for a smooth hover effect */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.categorySliderMainContainerWrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .categoryLogoImageStyle {
   height: 100px;
   width: 120px;
@@ -32,4 +54,56 @@
   font-weight: bold;
   font-family: var(--Heading-font-family);
   margin-top: 10px;
+}
+.CategoryButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.CatButtonStyle {
+  font-size: 1rem;
+  font-family: var(--Heading-font-family);
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  padding: 5px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50px;
+}
+.CatButtonStyle:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.CatButtonStyle1 {
+  font-size: 1rem;
+  font-family: var(--Heading-font-family);
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  background-color: red;
+  padding: 5px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50px;
+}
+.CatButtonStyle1:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
